@@ -1,0 +1,108 @@
+/* Full-length Glassmorphic Navbar */
+.full-length-navbar {
+    width: 100%; /* Full width */
+    height: 70px; /* Navbar height */
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphic background */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px); /* Blur for glass effect */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and links */
+    padding: 0 30px; /* Adjusted padding */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.285);
+    position: fixed; /* Stick to the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays on top */
+  }
+  
+  /* Navbar logo */
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0 3px 6px rgba(255, 255, 255, 0.3);
+    margin: 0;
+  }
+  
+  /* Navbar links container */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Space between links */
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Prevent overflow */
+  }
+  
+  /* Navbar links */
+  .navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text wrapping */
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.3);
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Hover effect for links */
+  .navbar-links a:hover {
+    color: #00f2fe; /* Accent color */
+    transform: translateY(-2px); /* Slight hover effect */
+  }
+  
+  /* Add spacing for links that are too close to the right edge */
+  .navbar-links a:last-child {
+    margin-right: 50px;
+  }
+
+
+/* Logout Button */
+.logout-button {
+  background: rgba(255, 100, 100, 0.7);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.logout-button:hover {
+  background: rgba(255, 70, 70, 1);
+  transform: translateY(-2px);
+}
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 1200px) {
+    .navbar-links {
+      gap: 15px; /* Reduce spacing between links */
+    }
+  
+    .navbar-links a {
+      font-size: 14px; /* Smaller font size */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar-links {
+      flex-direction: column; /* Stack links vertically */
+      gap: 10px;
+    }
+  
+    .full-length-navbar {
+      height: auto; /* Adjust height for stacked layout */
+      padding: 10px;
+    }
+  }
+  

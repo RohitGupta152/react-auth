@@ -1,0 +1,227 @@
+/* Full-page background with gradient and subtle animation */
+/* body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #2a9bff, #00f2fe);
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s ease infinite;
+    overflow: hidden;
+} */
+
+/* Gradient animation */
+/* @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+} */
+
+/* Glassmorphic container for Verify OTP */
+.verify-container {
+    width: 360px; /* Fixed width */
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(192, 192, 192, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-top: 120px;
+}
+
+/* Title styling */
+.verify-container h2 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    text-shadow: 0 3px 6px rgba(255, 255, 255, 0.314);
+    
+}
+
+/* Input field styling */
+.verify-form .input-group {
+    margin-bottom: 20px;
+}
+
+.verify-form label {
+    display: block;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 8px;
+    text-shadow: 0 1px 2px rgba(194, 194, 194, 0.324);
+    margin-bottom: 15px;
+}
+
+.verify-form .input-field {
+    width: 90%;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.216);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.verify-form .input-field::placeholder {
+    color: #dedede;
+    text-align: center;
+    font-size: 16px;
+}
+
+.verify-form .input-field:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 10px rgba(79, 172, 254, 0.8);
+    outline: none;
+}
+
+/* Button styling */
+.verify-form .verify-button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #2390ef, #00f2fe);
+    color: #000000;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.verify-form .verify-button:hover {
+    background: linear-gradient(135deg, #00f2fe, #2390ef);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.verify-form .verify-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styling */
+.verify-form .resend-button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #2390ef, #00f2fe);
+    color: #000000;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.verify-form .resend-button:hover {
+    background: linear-gradient(135deg, #00f2fe, #2390ef);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.verify-form .resend-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Toast notification custom styles */
+.Toastify__toast--success {
+    background-color: #000000; /* Green for success */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.552);
+  }
+  
+  .Toastify__toast--error {
+    background-color: #ffffff; /* Red Roses type for error */
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(252, 252, 252, 0.483);
+  }
+  
+  .Toastify__close-button {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: rgb(0, 8, 255);
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .Toastify__close-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+    color: #000000;
+  }
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.timer{
+    display: flex;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.timer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color:#2390ef;
+}
+
+.expired{
+    color: #ff6b6b; /* Expired timer color */
+    margin-bottom: 17px;
+}
+
+
+/* Style the input container to accommodate the icon inside the text box */
+.input-icon-container {
+    position: relative;
+    
+  }
+  
+  /* Icon styling */
+  .input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 18px;
+    pointer-events: none; /* Make sure the icon doesn't block input */
+  }
+  
+ 
